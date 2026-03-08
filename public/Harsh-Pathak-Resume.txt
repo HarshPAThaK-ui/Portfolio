@@ -1,0 +1,18 @@
+﻿Harsh Pathak
+Full Stack Developer
+
+Summary
+Building scalable and user-friendly web applications with the MERN stack.
+
+Skills
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- JavaScript
+- HTML/CSS
+
+Contact
+Email: harshppathak8423@gmail.com
+LinkedIn: https://www.linkedin.com/in/harsh-pathak-44167b261/
+GitHub: https://github.com/HarshPAThaK-ui

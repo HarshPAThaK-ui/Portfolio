@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-slate-100 antialiased;
+}
+
+@keyframes heroFloatOne {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(60px, 40px, 0) scale(1.08);
+  }
+}
+
+@keyframes heroFloatTwo {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-70px, 55px, 0) scale(0.96);
+  }
+}
+
+@keyframes heroFloatThree {
+  0%,
+  100% {
+    transform: translate3d(-50%, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(calc(-50% + 30px), -45px, 0) scale(1.05);
+  }
+}
+
+@keyframes heroRingSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heroGlowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(34, 211, 238, 0), 0 0 48px rgba(56, 189, 248, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 rgba(34, 211, 238, 0.1), 0 0 72px rgba(139, 92, 246, 0.28);
+  }
+}
+
+.hero-blob {
+  filter: blur(155px);
+  will-change: transform;
+}
+
+.hero-blob--one {
+  animation: heroFloatOne 32s ease-in-out infinite;
+}
+
+.hero-blob--two {
+  animation: heroFloatTwo 38s ease-in-out infinite;
+}
+
+.hero-blob--three {
+  animation: heroFloatThree 35s ease-in-out infinite;
+}
+
+.hero-avatar-ring {
+  will-change: transform;
+  animation: heroRingSpin 24s linear infinite;
+}
+
+.hero-avatar-glow {
+  animation: heroGlowPulse 6s ease-in-out infinite;
+}
+
+.hero-button-gradient {
+  background-size: 180% 180%;
+  background-position: 0% 50%;
+}
+
+.hero-button-gradient:hover {
+  background-position: 100% 50%;
+}
