@@ -8,12 +8,12 @@ const projects = [
     link: 'https://educare-institute.vercel.app/',
   },
   {
-    title: 'Task Manager',
-    description:
-      'Built during my Zidio internship, this productivity app simplifies task management for users with intuitive interface and efficient workflow.',
-    icon: 'task',
-    tech: ['React', 'Node.js', 'MongoDB'],
-  },
+  title: 'StockVision AI',
+  description:
+    'AI-powered stock market analysis platform that tracks market trends, aggregates financial news, and provides intelligent insights to assist investors in making data-driven decisions.',
+  icon: 'ai',
+  tech: ['React', 'Node.js', 'MongoDB', 'OpenAI API'],
+},
   {
     title: 'Pathak Estate',
     description:
